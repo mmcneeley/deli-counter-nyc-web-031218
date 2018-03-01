@@ -8,7 +8,7 @@ def line(katz_deli)
     line_string = "The line is currently:"
     katz_deli.each do |person, x|
       x += 1
-      line_string = line_string + " #{x}. #{person}"
+      line_string = "#{line_string} #{x}. #{person}"
     end
     puts line_string
   end
