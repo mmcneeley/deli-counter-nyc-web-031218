@@ -10,8 +10,8 @@ def line(katz_deli)
       x += 1
       line_string = line_string + " #{x}. #{person}"
     end
+    puts line_string
   end
-  puts line_string
 end
 
 def take_a_number(katz_deli, name)
