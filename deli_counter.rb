@@ -7,7 +7,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     line_string = "The line is currently:"
-    katz_deli.each do |person, x|
+    katz_deli.each_with_index do |person, x|
       x = x + 1
       line_string += " #{x.to_s}. #{person}"
       binding.pry
