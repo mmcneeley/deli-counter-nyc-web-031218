@@ -2,11 +2,14 @@
 katz_deli = []
 
 def line(katz_deli)
-  "The line is currently empty." if katz_deli.size == 0
-  line_string = "The line is currently:"
-  katz_deli.each do |person, x|
-    x += 1
-    line_string = line_string + " #{x}. #{person}"
+  if katz_deli.size == 0
+    "The line is currently empty."
+  else
+    line_string = "The line is currently:"
+    katz_deli.each do |person, x|
+      x += 1
+      line_string = line_string + " #{x}. #{person}"
+    end
   end
   line_string
 end
