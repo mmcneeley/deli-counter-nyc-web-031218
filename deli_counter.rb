@@ -3,7 +3,7 @@ katz_deli = []
 
 def line(katz_deli)
   if katz_deli.size == 0
-    "The line is currently empty."
+    puts "The line is currently empty."
   else
     line_string = "The line is currently:"
     katz_deli.each do |person, x|
