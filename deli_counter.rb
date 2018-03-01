@@ -1,6 +1,6 @@
 # Write your code here.
 require "pry"
-katz_deli = []
+katz_deli = ["Mike", "Bob"]
 
 def line(katz_deli)
   if katz_deli.size == 0
@@ -25,3 +25,5 @@ end
 def now_serving(katz_deli)
   puts katz_deli.size == 0 ? "There is nobody waiting to be served!" : "Currently serving #{katz_deli.shift}."
 end
+
+line(katz_deli)
